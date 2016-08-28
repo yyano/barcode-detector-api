@@ -11,13 +11,9 @@
   |
  */
 
-$app->get( '/', function () use ($app) {
-    return $app->version();
-} );
-
-use Illuminate\Http\Request;
-use \Illuminate\Http\UploadedFile;
-use app\Barcode;
+$app->get( '/', function() {
+    return view('top.index');
+});
 
 $app->post( 'v1/detect', 'DetectController@postDetect');
 
