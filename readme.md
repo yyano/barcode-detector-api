@@ -19,3 +19,16 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ### License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+## インストール
+
+* [ZBar](http://zbar.sourceforge.net/) - ZBar bar code reader
+  * centos6
+    * yum install zbar --enablerepo=epel
+* php ImageMagick and Imagick
+  * centos6
+    * yum install ImageMagick
+    * pecl install imagick
+    * php.ini add "extension=imagick.so"
+* composer update
+
